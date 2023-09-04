@@ -1,9 +1,10 @@
 import axios from "axios";
 
-const instance = axios.create({
-  baseURL: "https://todo-backend-dpbi7y86i-emersonmdn.vercel.app/api",
-  // baseURL: "http://localhost:8080/api",
+const API_URL = "https://anotador-backendv1.onrender.com/api";
+
+const axiosInstance = axios.create({
+  baseURL: API_URL,
   withCredentials: true,
 });
 
-export default instance;
+export default axiosInstance;
